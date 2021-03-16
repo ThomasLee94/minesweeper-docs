@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module generate_board</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>generate_board</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/thomas/Code/minesweeper-solver/generate_board.py">/home/thomas/Code/minesweeper-solver/generate_board.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;utilise&nbsp;the&nbsp;yeetcode&nbsp;problems&nbsp;for&nbsp;the&nbsp;reveal</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="generate_board.html#Board">Board</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Board">class <strong>Board</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Board">Board</a>(width,&nbsp;height)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Board-__init__"><strong>__init__</strong></a>(self, width, height)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Board-add_mines"><strong>add_mines</strong></a>(self, num_mines, i, j)</dt><dd><tt>Randomly&nbsp;add&nbsp;the&nbsp;number&nbsp;of&nbsp;mines&nbsp;to&nbsp;the&nbsp;board.</tt></dd></dl>
+
+<dl><dt><a name="Board-get_neighbours"><strong>get_neighbours</strong></a>(self, i, j)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;inbounds&nbsp;coorinates&nbsp;of&nbsp;the&nbsp;given<br>
+i&nbsp;&amp;&nbsp;j.</tt></dd></dl>
+
+<dl><dt><a name="Board-increment_adjacents"><strong>increment_adjacents</strong></a>(self, i, j)</dt><dd><tt>increments&nbsp;all&nbsp;adjacents&nbsp;of&nbsp;mines&nbsp;by&nbsp;1&nbsp;that&nbsp;are&nbsp;not&nbsp;mines</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module game</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>game</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/thomas/Code/minesweeper-solver/game.py">/home/thomas/Code/minesweeper-solver/game.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="game.html#MineSweeper">MineSweeper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MineSweeper">class <strong>MineSweeper</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#MineSweeper">MineSweeper</a>(width,&nbsp;height,&nbsp;num_mines)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MineSweeper-__init__"><strong>__init__</strong></a>(self, width, height, num_mines)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeper-display_board"><strong>display_board</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MineSweeper-display_number_tile"><strong>display_number_tile</strong></a>(self, i, j)</dt><dd><tt>###########################&nbsp;VISUALISE&nbsp;BOARD&nbsp;###########################</tt></dd></dl>
+
+<dl><dt><a name="MineSweeper-flag"><strong>flag</strong></a>(self, i, j)</dt></dl>
+
+<dl><dt><a name="MineSweeper-game_lost"><strong>game_lost</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MineSweeper-game_won"><strong>game_won</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MineSweeper-generate_board"><strong>generate_board</strong></a>(self, i, j)</dt><dd><tt>Generate&nbsp;board&nbsp;based&nbsp;on&nbsp;user&nbsp;input,<br>
+create&nbsp;bombs&nbsp;around&nbsp;the&nbsp;coordinate<br>
+that&nbsp;user&nbsp;chooses.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeper-is_blank"><strong>is_blank</strong></a>(self, i, j)</dt></dl>
+
+<dl><dt><a name="MineSweeper-is_flagged"><strong>is_flagged</strong></a>(self, i, j)</dt></dl>
+
+<dl><dt><a name="MineSweeper-is_mine"><strong>is_mine</strong></a>(self, i, j)</dt></dl>
+
+<dl><dt><a name="MineSweeper-is_selected"><strong>is_selected</strong></a>(self, i, j)</dt></dl>
+
+<dl><dt><a name="MineSweeper-play_game"><strong>play_game</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="MineSweeper-select"><strong>select</strong></a>(self, i, j)</dt><dd><tt>Selects&nbsp;tiles&nbsp;in&nbsp;the&nbsp;visible&nbsp;board&nbsp;if&nbsp;it&nbsp;is&nbsp;selectable,&nbsp;if&nbsp;the&nbsp;tile<br>
+is&nbsp;blank&nbsp;recursively&nbsp;select&nbsp;all&nbsp;of&nbsp;its&nbsp;neighbours</tt></dd></dl>
+
+<dl><dt><a name="MineSweeper-tile_representation"><strong>tile_representation</strong></a>(self, i, j)</dt></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-debug"><strong>debug</strong></a>(minesweeper)</dt></dl>
+</td></tr></table>
+</body></html>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module solver</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>solver</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/thomas/Code/minesweeper-solver/solver.py">/home/thomas/Code/minesweeper-solver/solver.py</a></font></td></tr></table>
+    <p><tt>#&nbsp;Solver&nbsp;<br>
+#&nbsp;write&nbsp;an&nbsp;algo&nbsp;that&nbsp;picks&nbsp;a&nbsp;100%&nbsp;safe&nbsp;box&nbsp;with&nbsp;given&nbsp;info,&nbsp;and&nbsp;store&nbsp;mines&nbsp;that&nbsp;<br>
+#&nbsp;adding&nbsp;more&nbsp;bombs&nbsp;&amp;&nbsp;grids&nbsp;makes&nbsp;it&nbsp;more&nbsp;difficult</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="solver.html#MineSweeperSolver">MineSweeperSolver</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MineSweeperSolver">class <strong>MineSweeperSolver</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#MineSweeperSolver">MineSweeperSolver</a>(width,&nbsp;height,&nbsp;num_mines)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MineSweeperSolver-__init__"><strong>__init__</strong></a>(self, width, height, num_mines)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-get_adjacent_flags"><strong>get_adjacent_flags</strong></a>(self, i, j)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;adjacents&nbsp;that&nbsp;are<br>
+flags&nbsp;from&nbsp;i&nbsp;&amp;&nbsp;j.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-get_hidden_neighbours"><strong>get_hidden_neighbours</strong></a>(self, i, j)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;neighbours&nbsp;that&nbsp;are&nbsp;hidden<br>
+from&nbsp;coord&nbsp;i&nbsp;&amp;&nbsp;j.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-get_visible_numbers"><strong>get_visible_numbers</strong></a>(self)</dt><dd><tt>Returns&nbsp;a&nbsp;list&nbsp;of&nbsp;all&nbsp;visible<br>
+numbers&nbsp;that&nbsp;are&nbsp;selected.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-identify_flags"><strong>identify_flags</strong></a>(self)</dt><dd><tt>Finds&nbsp;all&nbsp;flags&nbsp;with&nbsp;100%&nbsp;certainty.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-identify_selections"><strong>identify_selections</strong></a>(self)</dt><dd><tt>Find&nbsp;all&nbsp;selections&nbsp;with&nbsp;100%&nbsp;certainty.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-is_satisfied"><strong>is_satisfied</strong></a>(self, i, j)</dt><dd><tt>If&nbsp;the&nbsp;number&nbsp;of&nbsp;flags&nbsp;next&nbsp;to&nbsp;a&nbsp;numbered&nbsp;tile&nbsp;is&nbsp;equal&nbsp;to&nbsp;the&nbsp;tiles&nbsp;number</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-make_random_selection"><strong>make_random_selection</strong></a>(self)</dt><dd><tt>Select&nbsp;a&nbsp;random&nbsp;tile&nbsp;that&nbsp;has&nbsp;not&nbsp;yet&nbsp;been&nbsp;selected&nbsp;or&nbsp;flagged.</tt></dd></dl>
+
+<dl><dt><a name="MineSweeperSolver-solve"><strong>solve</strong></a>(self)</dt><dd><tt>Runs&nbsp;the&nbsp;solver.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>

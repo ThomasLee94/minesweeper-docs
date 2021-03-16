@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module game</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>game</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/thomas/Code/minesweeper-solver/game.py">/home/thomas/Code/minesweeper-solver/game.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="game.html#MineSweeper">MineSweeper</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MineSweeper">class <strong>MineSweeper</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#MineSweeper">MineSweeper</a>(width,&nbsp;height,&nbsp;num_mines)<br>
+&nbsp;<br>
+<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MineSweeper-__init__"><strong>__init__</strong></a>(self, width, height, num_mines)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
 
-## Available Scripts
+<dl><dt><a name="MineSweeper-display_board"><strong>display_board</strong></a>(self)</dt></dl>
 
-In the project directory, you can run:
+<dl><dt><a name="MineSweeper-display_number_tile"><strong>display_number_tile</strong></a>(self, i, j)</dt><dd><tt>###########################&nbsp;VISUALISE&nbsp;BOARD&nbsp;###########################</tt></dd></dl>
 
-### `npm start`
+<dl><dt><a name="MineSweeper-flag"><strong>flag</strong></a>(self, i, j)</dt></dl>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<dl><dt><a name="MineSweeper-game_lost"><strong>game_lost</strong></a>(self)</dt></dl>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<dl><dt><a name="MineSweeper-game_won"><strong>game_won</strong></a>(self)</dt></dl>
 
-### `npm test`
+<dl><dt><a name="MineSweeper-generate_board"><strong>generate_board</strong></a>(self, i, j)</dt><dd><tt>Generate&nbsp;board&nbsp;based&nbsp;on&nbsp;user&nbsp;input,<br>
+create&nbsp;bombs&nbsp;around&nbsp;the&nbsp;coordinate<br>
+that&nbsp;user&nbsp;chooses.</tt></dd></dl>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<dl><dt><a name="MineSweeper-is_blank"><strong>is_blank</strong></a>(self, i, j)</dt></dl>
 
-### `npm run build`
+<dl><dt><a name="MineSweeper-is_flagged"><strong>is_flagged</strong></a>(self, i, j)</dt></dl>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<dl><dt><a name="MineSweeper-is_mine"><strong>is_mine</strong></a>(self, i, j)</dt></dl>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<dl><dt><a name="MineSweeper-is_selected"><strong>is_selected</strong></a>(self, i, j)</dt></dl>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<dl><dt><a name="MineSweeper-play_game"><strong>play_game</strong></a>(self)</dt></dl>
 
-### `npm run eject`
+<dl><dt><a name="MineSweeper-select"><strong>select</strong></a>(self, i, j)</dt><dd><tt>Selects&nbsp;tiles&nbsp;in&nbsp;the&nbsp;visible&nbsp;board&nbsp;if&nbsp;it&nbsp;is&nbsp;selectable,&nbsp;if&nbsp;the&nbsp;tile<br>
+is&nbsp;blank&nbsp;recursively&nbsp;select&nbsp;all&nbsp;of&nbsp;its&nbsp;neighbours</tt></dd></dl>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<dl><dt><a name="MineSweeper-tile_representation"><strong>tile_representation</strong></a>(self, i, j)</dt></dl>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-debug"><strong>debug</strong></a>(minesweeper)</dt></dl>
+</td></tr></table>
+</body></html>
